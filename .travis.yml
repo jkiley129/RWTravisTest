@@ -1,0 +1,5 @@
+language: objective-c  #1 This tells Travis to build the project with Objective-C. Travis only uses Objective-C for Xcode based tools so always keep this the same for iOS
+osx_image: xcode6.4 #2 Telling Travis which version of Xcode to create the build with, specify which version you would like to use
+xcode_project: MovingHelper.xcodeproj #3 Specifies to Travis which Xcode file that is going to be used. If you need a workspace replace this section header as xcode_workspace
+xcode_scheme: MovingHelper #4 Tells Travis the scheme that you want to use 
+xcode_sdk: iphonesimulator8.4 #5 Tells Travis to run the tests on an iphone simulator. You can specify otherwise but it has to code sign then
